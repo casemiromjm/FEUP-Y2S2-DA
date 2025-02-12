@@ -1,0 +1,68 @@
+[
+{
+  "directory": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/build",
+  "command": "/usr/bin/g++  -I/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/TP1 -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest/include -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock/include -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock -g -std=gnu++14 -o CMakeFiles/da2425_p01_student.dir/TP1/ex1.cpp.o -c /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/TP1/ex1.cpp",
+  "file": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/TP1/ex1.cpp",
+  "output": "CMakeFiles/da2425_p01_student.dir/TP1/ex1.cpp.o"
+},
+{
+  "directory": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/build",
+  "command": "/usr/bin/g++  -I/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/TP1 -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest/include -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock/include -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock -g -std=gnu++14 -o CMakeFiles/da2425_p01_student.dir/TP1/ex2.cpp.o -c /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/TP1/ex2.cpp",
+  "file": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/TP1/ex2.cpp",
+  "output": "CMakeFiles/da2425_p01_student.dir/TP1/ex2.cpp.o"
+},
+{
+  "directory": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/build",
+  "command": "/usr/bin/g++  -I/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/TP1 -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest/include -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock/include -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock -g -std=gnu++14 -o CMakeFiles/da2425_p01_student.dir/TP1/ex3.cpp.o -c /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/TP1/ex3.cpp",
+  "file": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/TP1/ex3.cpp",
+  "output": "CMakeFiles/da2425_p01_student.dir/TP1/ex3.cpp.o"
+},
+{
+  "directory": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/build",
+  "command": "/usr/bin/g++  -I/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/TP1 -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest/include -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock/include -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock -g -std=gnu++14 -o CMakeFiles/da2425_p01_student.dir/TP1/ex4.cpp.o -c /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/TP1/ex4.cpp",
+  "file": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/TP1/ex4.cpp",
+  "output": "CMakeFiles/da2425_p01_student.dir/TP1/ex4.cpp.o"
+},
+{
+  "directory": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/build",
+  "command": "/usr/bin/g++  -I/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/TP1 -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest/include -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock/include -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock -g -std=gnu++14 -o CMakeFiles/da2425_p01_student.dir/TP1/ex5.cpp.o -c /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/TP1/ex5.cpp",
+  "file": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/TP1/ex5.cpp",
+  "output": "CMakeFiles/da2425_p01_student.dir/TP1/ex5.cpp.o"
+},
+{
+  "directory": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/build",
+  "command": "/usr/bin/g++  -I/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/TP1 -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest/include -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock/include -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock -g -std=gnu++14 -o CMakeFiles/da2425_p01_student.dir/TP1/tests.cpp.o -c /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/TP1/tests.cpp",
+  "file": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/TP1/tests.cpp",
+  "output": "CMakeFiles/da2425_p01_student.dir/TP1/tests.cpp.o"
+},
+{
+  "directory": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/build",
+  "command": "/usr/bin/g++  -I/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/TP1 -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest/include -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock/include -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock -g -std=gnu++14 -o CMakeFiles/da2425_p01_student.dir/data_structures/createGraphs.cpp.o -c /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/data_structures/createGraphs.cpp",
+  "file": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/data_structures/createGraphs.cpp",
+  "output": "CMakeFiles/da2425_p01_student.dir/data_structures/createGraphs.cpp.o"
+},
+{
+  "directory": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/build/lib/googletest/googlemock",
+  "command": "/usr/bin/g++  -I/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock/include -I/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest/include -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest -O3 -DNDEBUG -std=c++14 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock/src/gmock-all.cc",
+  "file": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock/src/gmock-all.cc",
+  "output": "lib/googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
+},
+{
+  "directory": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/build/lib/googletest/googlemock",
+  "command": "/usr/bin/g++  -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock/include -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest/include -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest -O3 -DNDEBUG -std=c++14 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock/src/gmock_main.cc",
+  "file": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googlemock/src/gmock_main.cc",
+  "output": "lib/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+},
+{
+  "directory": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/build/lib/googletest/googletest",
+  "command": "/usr/bin/g++  -I/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest/include -I/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest -O3 -DNDEBUG -std=c++14 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest/src/gtest-all.cc",
+  "file": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest/src/gtest-all.cc",
+  "output": "lib/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+},
+{
+  "directory": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/build/lib/googletest/googletest",
+  "command": "/usr/bin/g++  -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest/include -isystem /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest -O3 -DNDEBUG -std=c++14 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest/src/gtest_main.cc",
+  "file": "/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/lib/googletest/googletest/src/gtest_main.cc",
+  "output": "lib/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+}
+]
