@@ -14,15 +14,17 @@ using namespace std;
 
 template <class T>
 bool isDAG(Graph<T> *g) {
+    for (auto v : g->getVertexSet()) {
+        v->setVisited(false); // Reset visited state
+        v->setProcessing(false); // Reset processing state
+    }
 
     for (auto v : g->getVertexSet()) {
-
-        if (dfsIsDAG(v)) {
-
-            return false;
+        if (!v->isVisited()) {
+            if (!dfsIsDAG(v)) {
+                return false;
+            }
         }
-
-        v->setProcessing(false);
     }
 
     return true;
@@ -35,20 +37,21 @@ bool isDAG(Graph<T> *g) {
 template <class T>
 bool dfsIsDAG(Vertex<T> *v) {
 
+    if (v->isProcessing()) return false;
+    if (v->isVisited()) return true;
+
     v->setProcessing(true);
     v->setVisited(true);
 
     for (auto e : v->getAdj()) {
         auto w = e->getDest();
 
-        if (w->isVisited()) {
+        if (!dfsIsDAG(w)) {
             return false;
         }
-
-        dfsISDAG(w);
     }
 
+    v->setProcessing(false);
 
     return true;
 }
-
