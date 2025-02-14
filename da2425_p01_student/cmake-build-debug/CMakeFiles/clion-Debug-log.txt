@@ -1,4 +1,4 @@
-/snap/clion/314/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/314/bin/ninja/linux/x64/ninja -G Ninja -S /home/casemiromjm/feup/y2/s2/da/da2425_p01_student -B /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/cmake-build-debug
+/snap/clion/322/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/322/bin/ninja/linux/x64/ninja -G Ninja -S /home/casemiromjm/feup/y2/s2/da/da2425_p01_student -B /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/cmake-build-debug
 -- The C compiler identification is GNU 13.3.0
 -- The CXX compiler identification is GNU 13.3.0
 -- Detecting C compiler ABI info
@@ -15,6 +15,6 @@
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
 -- Found Threads: TRUE
--- Configuring done (1.0s)
+-- Configuring done (0.9s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/casemiromjm/feup/y2/s2/da/da2425_p01_student/cmake-build-debug

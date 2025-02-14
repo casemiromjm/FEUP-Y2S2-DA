@@ -116,19 +116,19 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "gtest::@7e3677ed2a4dc8c8eb88"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "gtest_main::@7e3677ed2a4dc8c8eb88"
-		},
-		{
-			"backtrace" : 2,
 			"id" : "gmock::@7712283c01f504ef6d93"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "gmock_main::@7712283c01f504ef6d93"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "gtest::@7e3677ed2a4dc8c8eb88"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "gtest_main::@7e3677ed2a4dc8c8eb88"
 		}
 	],
 	"id" : "da2425_p01_student::@6890427a1f51a3e7e1df",

@@ -14,7 +14,17 @@ using namespace std;
 
 template <class T>
 bool isDAG(Graph<T> *g) {
-    // TODO
+
+    for (auto v : g->getVertexSet()) {
+
+        if (dfsIsDAG(v)) {
+
+            return false;
+        }
+
+        v->setProcessing(false);
+    }
+
     return true;
 }
 
@@ -24,7 +34,21 @@ bool isDAG(Graph<T> *g) {
  */
 template <class T>
 bool dfsIsDAG(Vertex<T> *v) {
-    // TODO
+
+    v->setProcessing(true);
+    v->setVisited(true);
+
+    for (auto e : v->getAdj()) {
+        auto w = e->getDest();
+
+        if (w->isVisited()) {
+            return false;
+        }
+
+        dfsISDAG(w);
+    }
+
+
     return true;
 }
 

@@ -131,10 +131,10 @@ lib/googletest/googletest/clean: lib/googletest/googletest/CMakeFiles/gtest_main
 # Target rules for target CMakeFiles/da2425_p01_student.dir
 
 # All Build rule for target.
-CMakeFiles/da2425_p01_student.dir/all: lib/googletest/googletest/CMakeFiles/gtest.dir/all
-CMakeFiles/da2425_p01_student.dir/all: lib/googletest/googletest/CMakeFiles/gtest_main.dir/all
 CMakeFiles/da2425_p01_student.dir/all: lib/googletest/googlemock/CMakeFiles/gmock.dir/all
 CMakeFiles/da2425_p01_student.dir/all: lib/googletest/googlemock/CMakeFiles/gmock_main.dir/all
+CMakeFiles/da2425_p01_student.dir/all: lib/googletest/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/da2425_p01_student.dir/all: lib/googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/da2425_p01_student.dir/build.make CMakeFiles/da2425_p01_student.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/da2425_p01_student.dir/build.make CMakeFiles/da2425_p01_student.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target da2425_p01_student"
@@ -186,8 +186,8 @@ lib/googletest/googlemock/CMakeFiles/gmock.dir/clean:
 # Target rules for target lib/googletest/googlemock/CMakeFiles/gmock_main.dir
 
 # All Build rule for target.
-lib/googletest/googlemock/CMakeFiles/gmock_main.dir/all: lib/googletest/googletest/CMakeFiles/gtest.dir/all
 lib/googletest/googlemock/CMakeFiles/gmock_main.dir/all: lib/googletest/googlemock/CMakeFiles/gmock.dir/all
+lib/googletest/googlemock/CMakeFiles/gmock_main.dir/all: lib/googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest/googlemock/CMakeFiles/gmock_main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/casemiromjm/feup/y2/s2/da/da2425_p01_student/build/CMakeFiles --progress-num=11,12 "Built target gmock_main"
