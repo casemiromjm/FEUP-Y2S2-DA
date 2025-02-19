@@ -11,6 +11,14 @@ using namespace std;
 template <typename T>
 vector<T> topsort(Graph<T> *g) {
     vector<int> res;
-    // TODO
+
+    // g must be a DAG -> must implement cycle detection
+    // should use kahn's algorithm!!!!
+
+    for (auto v : g->getVertexSet()) {
+        v->setIndegree(v->getIncoming().size());
+    }
+
+
     return res;
 }
