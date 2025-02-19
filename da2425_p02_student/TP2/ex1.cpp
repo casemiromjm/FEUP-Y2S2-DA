@@ -3,8 +3,30 @@
 // Updated by DA 24/25 Team
 
 int maxSubsequenceBF(int A[], unsigned int n, unsigned int &i, unsigned int &j) {
-    //TODO
-    return 0;
+    // using brute force
+
+    // i -> where the subarray starts
+    // j -> where the subarray ends
+    // A -> array
+    // n -> length do array
+
+    int max_sum = 0;
+    int sum = 0;
+
+    for (int k = 0; k < n; k++) {
+        sum =+ A[k];
+        for (int l = k+1; l < n; l++) {
+            sum += A[l];
+
+            if (sum > max_sum) {
+                max_sum = sum;
+                i = k; j = l;
+            }
+        }
+    }
+
+
+    return max_sum;
 }
 
 /// TESTS ///
