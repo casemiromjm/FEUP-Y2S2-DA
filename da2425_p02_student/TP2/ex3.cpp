@@ -5,7 +5,8 @@
 #include <algorithm> // for sort
 
 unsigned int knapsackBF(unsigned int values[], unsigned int weights[], unsigned int n, unsigned int maxWeight, bool usedItems[]) {
-    //TODO
+    // using brute force; similar to ex2
+
     return 0;
 }
 

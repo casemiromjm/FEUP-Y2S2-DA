@@ -2,9 +2,52 @@
 // Updated by DA 24/25 Team
 
 bool subsetSumBF(unsigned int A[], unsigned int n, unsigned int T, unsigned int subset[], unsigned int &subsetSize) {
-    //TODO
+    // using brute force
     subsetSize = 0;  // This variable is defined for the unit test to work. You should update it in your implementation.
-    return true;
+
+    /* A -> array
+     * n -> array size
+     * subset -> subarray that sums equals to T
+     * subsetSize -> subarray size
+     * T -> target sum
+     * returns true if there is a subset, false otherwise
+     */
+
+    int curCand[n] = {0};
+
+    while (true) {
+        int sum = 0;
+
+        for (int i = 0; i < n; i++) {
+            sum += A[i]*curCand[i];
+        }
+
+        if (sum == T) {
+            for (int i = 0; i < n; i++) {
+                if (curCand[i] == 1) {
+                    subset[subsetSize++] = A[i];
+                }
+            }
+            return true;
+        }
+
+        int curIdx = 0;
+        while (curCand[curIdx] != 0) {
+            curIdx++;
+
+            if (curIdx == n) { break; }
+        }
+
+        if (curIdx == n) { break; }
+
+        for (int i = 0; i < curIdx; i++) {
+            curCand[i] = 0;
+        }
+
+        curCand[curIdx] = 1;
+    }
+
+    return false;
 }
 
 /// TESTS ///
