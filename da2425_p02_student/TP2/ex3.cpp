@@ -3,22 +3,70 @@
 
 #include <vector>
 #include <algorithm> // for sort
+#include <gmock/gmock-matchers.h>
 
 unsigned int knapsackBF(unsigned int values[], unsigned int weights[], unsigned int n, unsigned int maxWeight, bool usedItems[]) {
     // using brute force; similar to ex2
+
+    /*
+     * values[] -> values of items i
+     * weights[] -> weights of items i
+     * n -> i items
+     * maxWeight -> max weight of the knapsack
+     * usedItems[] -> items that will go in the knapsack
+     */
+
+    for (int i = 0; i < n; i++) {
+        usedItems[i] = false;
+    }
+
+    int max_sum = 0;
+    int cur_weight = 0;
+    while (true) {
+        int sum = 0;
+
+        for (int i = 0; i < n; i++) {
+            sum += values[i]*usedItems[i];
+            cur_weight += weights[i]*usedItems[i];
+        }
+
+        if () {
+            for (int i = 0; i < n; i++) {
+                if (curCand[i] == 1) {
+                    subset[subsetSize++] = A[i];
+                }
+            }
+            return true;
+        }
+
+        int curIdx = 0;
+        while (curCand[curIdx] != 0) {
+            curIdx++;
+
+            if (curIdx == n) { break; }
+        }
+
+        if (curIdx == n) { break; }
+
+        for (int i = 0; i < curIdx; i++) {
+            curCand[i] = 0;
+        }
+
+        curCand[curIdx] = 1;
+    }
 
     return 0;
 }
 
 // does not guarantee the optimal solution in the current form
 unsigned int knapsackGreedyValue(unsigned int values[], unsigned int weights[], unsigned int n, unsigned int maxWeight, bool usedItems[]) {
-    //TODO
+    // most valuable items
     return 0;
 }
 
 // does not guarantee the optimal solution in the current form
 unsigned int knapsackGreedyWeight(unsigned int values[], unsigned int weights[], unsigned int n, unsigned int maxWeight, bool usedItems[]) {
-    //TODO
+    // ligther items
     return 0;
 }
 
