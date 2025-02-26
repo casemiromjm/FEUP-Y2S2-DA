@@ -6,7 +6,49 @@
 
 template <typename T>
 std::vector<Vertex<T> *> prim(Graph<T> *g) {
-    // TODO
+
+    if (g->getVertexSet().empty()) {
+        return g->getVertexSet();
+    }
+
+    // auxiliary variables
+    for (auto v : g->getVertexSet()) {
+        v->setVisited(false);
+        v->setDist(INF);
+        v->setPath(nullptr);
+    }
+
+    // initialize prim on a vertex, e.g. the first
+    auto v = g->getVertexSet().front();
+    v->setDist(0);
+
+    MutablePriorityQueue<Vertex<T>> pq;
+    pq.insert(v);
+
+    while (!pq.empty()) {
+        Vertex<T>* t = pq.extractMin(); // node with the lightest weight ("shortest" edge between nodes)
+        t->setVisited(true);
+
+        for (auto e : t->getAdj()) {
+            auto w = e->getDest();
+
+            if (!w->isVisited()) {
+                double oldDist = w->getDist();
+                if (e->getWeight() < oldDist) {
+                    w->setDist(e->getWeight());
+                    w->setPath(e);
+
+                    if (oldDist == INF) {
+                        pq.insert(w);
+                    }
+                    else {
+                        pq.decreaseKey(w);
+                    }
+                }
+            }
+        }
+    }
+
     return g->getVertexSet();
 }
 
