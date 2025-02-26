@@ -6,14 +6,38 @@
 // Function to test the given vertex 'w' and visit it if conditions are met
 template <class T>
 void testAndVisit(std::queue< Vertex<T>*> &q, Edge<T> *e, Vertex<T> *w, double residual) {
-    // TODO
+    if (!w->isVisited() && residual < 0) {
+        w->setVisited(true);
+        w->setPath(e);
+        q.push(w);
+    }
 }
 
 // Function to find an augmenting path using Breadth-First Search
 template <class T>
 bool findAugmentingPath(Graph<T> *g, Vertex<T> *s, Vertex<T> *t) {
-    // TODO
-   return true;
+    for (auto v : g->getVertexSet()) {
+        v->setVisited(false);
+    }
+
+    s.setVisited(true);
+    std::queue<Vertex<T> *> q;
+    q.push(s);
+
+    while (!q.empty() && !t->isVisited()) {
+        auto v = q.front();
+        q.pop();
+
+        for (auto e : v->getAdj()) {
+            testAndVisit(q, e, e->getDest(), e->getWeight() - e->getFlow());
+        }
+
+        for (auto e : v->getIncoming()) {
+            testAndVisit(q, e, e->getOrig(), e->getFlow());
+        }
+    }
+
+    return t->isVisited();
 }
 
 // Function to find the minimum residual capacity along the augmenting path
