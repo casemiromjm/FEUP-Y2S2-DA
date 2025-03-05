@@ -4,6 +4,8 @@
 #include "../data_structures/Graph.h"
 #include <queue>  // Include queue for BFS
 
+// simplified dijkstra
+
 template <class T>
 void unweightedShortestPath(Graph<T> * g, const int &origin) {
     // TODO

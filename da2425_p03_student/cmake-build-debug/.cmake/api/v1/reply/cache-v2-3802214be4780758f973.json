@@ -67,7 +67,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/casemiromjm/feup/y2/s2/da/da2425_p03_student/cmake-build-debug"
+			"value" : "/home/casemiromjm/feup/y2/s2/da/personal/da2425_p03_student/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/322/bin/cmake/linux/x64/bin/cmake"
+			"value" : "/snap/clion/326/bin/cmake/linux/x64/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -139,7 +139,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/322/bin/cmake/linux/x64/bin/cpack"
+			"value" : "/snap/clion/326/bin/cmake/linux/x64/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -151,7 +151,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/322/bin/cmake/linux/x64/bin/ctest"
+			"value" : "/snap/clion/326/bin/cmake/linux/x64/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -555,7 +555,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/casemiromjm/feup/y2/s2/da/da2425_p03_student/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/casemiromjm/feup/y2/s2/da/personal/da2425_p03_student/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -627,7 +627,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/casemiromjm/feup/y2/s2/da/da2425_p03_student"
+			"value" : "/home/casemiromjm/feup/y2/s2/da/personal/da2425_p03_student"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -935,7 +935,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/snap/clion/322/bin/ninja/linux/x64/ninja"
+			"value" : "/snap/clion/326/bin/ninja/linux/x64/ninja"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -1227,7 +1227,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/322/bin/cmake/linux/x64/share/cmake-3.30"
+			"value" : "/snap/clion/326/bin/cmake/linux/x64/share/cmake-3.30"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1647,7 +1647,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/casemiromjm/feup/y2/s2/da/da2425_p03_student/cmake-build-debug"
+			"value" : "/home/casemiromjm/feup/y2/s2/da/personal/da2425_p03_student/cmake-build-debug"
 		},
 		{
 			"name" : "da2425_p03_student_IS_TOP_LEVEL",
@@ -1671,7 +1671,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/casemiromjm/feup/y2/s2/da/da2425_p03_student"
+			"value" : "/home/casemiromjm/feup/y2/s2/da/personal/da2425_p03_student"
 		},
 		{
 			"name" : "generated_dir",
@@ -1683,7 +1683,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/casemiromjm/feup/y2/s2/da/da2425_p03_student/cmake-build-debug/lib/googletest/googletest/generated"
+			"value" : "/home/casemiromjm/feup/y2/s2/da/personal/da2425_p03_student/cmake-build-debug/lib/googletest/googletest/generated"
 		},
 		{
 			"name" : "gmock_BINARY_DIR",
@@ -1695,7 +1695,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/casemiromjm/feup/y2/s2/da/da2425_p03_student/cmake-build-debug/lib/googletest/googlemock"
+			"value" : "/home/casemiromjm/feup/y2/s2/da/personal/da2425_p03_student/cmake-build-debug/lib/googletest/googlemock"
 		},
 		{
 			"name" : "gmock_IS_TOP_LEVEL",
@@ -1719,7 +1719,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/casemiromjm/feup/y2/s2/da/da2425_p03_student/lib/googletest/googlemock"
+			"value" : "/home/casemiromjm/feup/y2/s2/da/personal/da2425_p03_student/lib/googletest/googlemock"
 		},
 		{
 			"name" : "gmock_build_tests",
@@ -1747,7 +1747,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/casemiromjm/feup/y2/s2/da/da2425_p03_student/cmake-build-debug/lib/googletest"
+			"value" : "/home/casemiromjm/feup/y2/s2/da/personal/da2425_p03_student/cmake-build-debug/lib/googletest"
 		},
 		{
 			"name" : "googletest-distribution_IS_TOP_LEVEL",
@@ -1771,7 +1771,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/casemiromjm/feup/y2/s2/da/da2425_p03_student/lib/googletest"
+			"value" : "/home/casemiromjm/feup/y2/s2/da/personal/da2425_p03_student/lib/googletest"
 		},
 		{
 			"name" : "gtest_BINARY_DIR",
@@ -1783,7 +1783,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/casemiromjm/feup/y2/s2/da/da2425_p03_student/cmake-build-debug/lib/googletest/googletest"
+			"value" : "/home/casemiromjm/feup/y2/s2/da/personal/da2425_p03_student/cmake-build-debug/lib/googletest/googletest"
 		},
 		{
 			"name" : "gtest_IS_TOP_LEVEL",
@@ -1807,7 +1807,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/casemiromjm/feup/y2/s2/da/da2425_p03_student/lib/googletest/googletest"
+			"value" : "/home/casemiromjm/feup/y2/s2/da/personal/da2425_p03_student/lib/googletest/googletest"
 		},
 		{
 			"name" : "gtest_build_samples",

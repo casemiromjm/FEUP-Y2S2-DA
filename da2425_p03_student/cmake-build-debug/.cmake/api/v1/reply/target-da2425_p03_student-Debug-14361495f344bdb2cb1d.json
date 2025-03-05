@@ -68,27 +68,27 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/home/casemiromjm/feup/y2/s2/da/da2425_p03_student/TP3"
+					"path" : "/home/casemiromjm/feup/y2/s2/da/personal/da2425_p03_student/TP3"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/home/casemiromjm/feup/y2/s2/da/da2425_p03_student/lib/googletest/googletest/include"
+					"path" : "/home/casemiromjm/feup/y2/s2/da/personal/da2425_p03_student/lib/googletest/googletest/include"
 				},
 				{
 					"backtrace" : 5,
 					"isSystem" : true,
-					"path" : "/home/casemiromjm/feup/y2/s2/da/da2425_p03_student/lib/googletest/googlemock/include"
+					"path" : "/home/casemiromjm/feup/y2/s2/da/personal/da2425_p03_student/lib/googletest/googlemock/include"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/home/casemiromjm/feup/y2/s2/da/da2425_p03_student/lib/googletest/googletest"
+					"path" : "/home/casemiromjm/feup/y2/s2/da/personal/da2425_p03_student/lib/googletest/googletest"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/home/casemiromjm/feup/y2/s2/da/da2425_p03_student/lib/googletest/googlemock"
+					"path" : "/home/casemiromjm/feup/y2/s2/da/personal/da2425_p03_student/lib/googletest/googlemock"
 				}
 			],
 			"language" : "CXX",

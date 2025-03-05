@@ -6,21 +6,73 @@
 
 using namespace std;
 
+// make it possible to reanalyze other paths
 template <class T>
 bool relax(Edge<T> *edge) { // d[u] + w(u,v) < d[v]
-    // TODO
+
+    //
+    if (edge->getOrig()->getDist() + edge->getWeight() < edge->getDest()->getDist()) {
+        edge->getDest()->setDist(edge->getOrig()->getDist() + edge->getWeight());
+        edge->getDest()->setPath(edge);
+        return true;
+    }
+
     return false;
 }
 
 template <class T>
 void dijkstra(Graph<T> * g, const int &origin) {
-    // TODO
+
+    for (auto v : g->getVertexSet()) {
+        v->setDist(INF);
+        v->setPath(nullptr);
+    }
+
+    auto v = g->findVertex(origin);
+    v->setDist(0);
+
+    MutablePriorityQueue<Vertex<T>> pq;
+    pq.insert(v);
+
+    while (!pq.empty()) {
+        auto w = pq.extractMin();
+
+        for (auto e : w->getAdj()) {
+            double oldDist = e->getDest()->getDist();
+
+            if (relax(e)) {
+                if (oldDist == INF) {   // vertex not on pq yet
+                    pq.insert(e->getDest());
+                }
+                else {
+                    pq.decreaseKey(e->getDest()); // why?
+                }
+            }
+        }
+    }
+
 }
 
+// construct (or update) the shortest path
 template <class T>
 static std::vector<T> getPath(Graph<T> * g, const int &origin, const int &dest) {
     std::vector<T> res;
-    // TODO
+
+    auto v = g->findVertex(dest);
+    if (v == nullptr || v->getDist() == INF) {
+        return res;     // dest not reachable
+    }
+
+    auto o = g->findVertex(origin);
+
+    while (v != o) {
+        res.push_back(v->getInfo());
+        v = v->getPath()->getOrig();
+    }
+
+    res.push_back(v->getInfo());    // add the last iteration
+
+    reverse(res.begin(), res.end());
     return res;
 }
 
