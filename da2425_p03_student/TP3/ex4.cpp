@@ -10,7 +10,6 @@ using namespace std;
 template <class T>
 bool relax(Edge<T> *edge) { // d[u] + w(u,v) < d[v]
 
-    //
     if (edge->getOrig()->getDist() + edge->getWeight() < edge->getDest()->getDist()) {
         edge->getDest()->setDist(edge->getOrig()->getDist() + edge->getWeight());
         edge->getDest()->setPath(edge);
@@ -23,11 +22,13 @@ bool relax(Edge<T> *edge) { // d[u] + w(u,v) < d[v]
 template <class T>
 void dijkstra(Graph<T> * g, const int &origin) {
 
+    // initialize variables
     for (auto v : g->getVertexSet()) {
         v->setDist(INF);
         v->setPath(nullptr);
     }
 
+    // get the origin
     auto v = g->findVertex(origin);
     v->setDist(0);
 
