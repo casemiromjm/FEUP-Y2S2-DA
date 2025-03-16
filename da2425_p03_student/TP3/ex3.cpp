@@ -4,17 +4,59 @@
 #include "../data_structures/Graph.h"
 #include <queue>  // Include queue for BFS
 
-// simplified dijkstra
+// simplified dijkstra; edges without weights
 
 template <class T>
 void unweightedShortestPath(Graph<T> * g, const int &origin) {
-    // TODO
+
+    for (auto v : g->getVertexSet()) {
+        v->setDist(INF);
+        v->setPath(nullptr);
+    }
+
+    auto v = g->findVertex(origin);
+    v->setDist(0);
+
+    std::queue<Vertex<T>*> q;
+    q.push(v);
+
+    // BFS
+    while (!q.empty()) {
+        auto w = q.front();
+        w->setVisited(true);
+        q.pop();
+
+        for (auto e : w->getAdj()) {
+            auto u = e->getDest();
+
+            if (u->getDist() == INF) {
+                u->setDist(v->getDist()+1);
+                u->setPath(e);
+                q.push(u);
+            }
+        }
+    }
 }
 
 template <class T>
 static std::vector<T> getPath(Graph<T> * g, const int &origin, const int &dest) {
     std::vector<T> res;
-    // TODO
+
+    auto v = g->findVertex(dest);
+    if (v == nullptr || v->getDist() == INF) {
+        return res;     // dest not reachable
+    }
+
+    auto o = g->findVertex(origin);
+
+    while (v != o) {
+        res.push_back(v->getInfo());
+        v = v->getPath()->getOrig();
+    }
+
+    res.push_back(v->getInfo());    // add the last iteration
+
+    reverse(res.begin(), res.end());
     return res;
 }
 
