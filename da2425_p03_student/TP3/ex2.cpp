@@ -4,17 +4,80 @@
 #include "MSTTestAux.h"
 #include "../data_structures/UFDS.h"
 
+template <class T>
+bool compareEdgesKruskal(const Edge<T>* e1, const Edge<T>* e2) {
+    return e1->getWeight() < e2->getWeight();
+}
+
 /**
  * Auxiliary function to set the "path" field to make a spanning tree.
  */
 template <typename T>
 void dfsKruskalPath(Vertex<T> *v) {
- // TODO
+    v->setVisited(true);
+
+    for (auto e : v->getAdj()) {
+        auto w = e->getDest();
+
+        if (e->isSelected() && !w->isVisited()) {
+            w->setPath(e);
+            dfsKruskalPath(w);
+        }
+    }
 }
 
 template <typename T>
 std::vector<Vertex<T> *> kruskal(Graph<T> *g) {
-    // TODO
+
+    if (g->getVertexSet().empty()) {
+        return g->getVertexSet();   // no minimal spanning tree
+    }
+
+    UFDS ufds(g->getNumVertex());
+    std::vector<Edge<T> *> edges;
+    unsigned int edgesCount = 0;
+
+    // initialize variables
+    for (auto v : g->getVertexSet()) {
+        v->setVisited(false);
+        v->setPath(nullptr);
+
+        for (auto e : v->getAdj()) {
+            e->setSelected(false);
+
+            if (e->getOrig()->getInfo() < e->getDest()->getInfo()) {
+                edges.push_back(e);
+            }
+        }
+    }
+
+    // sorts edges by non-decreasing order (x >= y, x being the one before y)
+    sort(edges.begin(), edges.end(), compareEdgesKruskal<T>);
+
+    // kruskal
+    for (auto e : edges) {
+        auto orig = e->getOrig();
+        auto dest = e->getDest();
+
+        if (!ufds.isSameSet(orig->getInfo(), dest->getInfo())) {
+            ufds.linkSets(orig->getInfo(), dest->getInfo());
+
+            e->setSelected(true);
+            e->getReverse()->setSelected(true);
+
+            edgesCount++;
+
+            if (edgesCount == g->getNumVertex()-1) {
+                break;
+            }
+        }
+    }
+
+    // makes the first node as the initial
+    g->getVertexSet()[0]->setPath(nullptr);
+    // set path of the spanning tree
+    dfsKruskalPath(g->getVertexSet()[0]);
+
     return g->getVertexSet();
 }
 
