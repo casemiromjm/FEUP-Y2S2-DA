@@ -77,3 +77,4 @@ fabric.properties
 # avoid useless files
 idea/
 *.zip
+**/cmake-build-debug/
