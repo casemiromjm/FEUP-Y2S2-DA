@@ -3,8 +3,23 @@
 #include "exercises.h"
 
 std::string hanoiDC(unsigned int n, char src, char dest) {
-    // TODO: Implement function
-    return "";
+    std::string res = "";
+
+    if (n == 1) {
+        res += src;
+        res += "->";
+        res += dest;
+    }
+    else {
+        char aux = 'A' + 'B' + 'C' - src - dest;
+        res += hanoiDC(n-1, src, aux) + ",";
+        res += src;
+        res += "->";
+        res += dest;
+        res += "," + hanoiDC(n-1, aux, dest);
+    }
+
+    return res;
 }
 
 /// TESTS ///
